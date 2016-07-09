@@ -1,0 +1,9 @@
+flags: {}
+extra-package-dbs: []
+packages:
+- '.'
+extra-deps:
+- data-accessor-template-0.2.1.13
+- distributed-process-monad-control-0.5.1.2
+- text-1.2.2.1
+resolver: lts-6.6
