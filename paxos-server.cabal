@@ -24,6 +24,7 @@ library
                      , distributed-process-simplelocalnet >= 0.2
                      , distributed-process-monad-control >= 0.5
                      , monad-control >= 1.0
+                     , lifted-base >= 0.2
                      , mtl >= 2.2
                      , binary >= 0.7
                      , containers >= 0.5
@@ -39,6 +40,20 @@ executable paxos-server-exe
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , paxos-server
+                     , distributed-process
+                     , distributed-process-async >= 0.2
+                     , distributed-process-extras >= 0.2
+                     , distributed-process-simplelocalnet >= 0.2
+                     , distributed-process-monad-control >= 0.5
+                     , monad-control >= 1.0
+                     , lifted-base >= 0.2
+                     , mtl >= 2.2
+                     , binary >= 0.7
+                     , containers >= 0.5
+                     , rank1dynamic >= 0.3
+                     , bytestring >= 0.10
+                     , data-accessor >= 0.2
+                     , data-accessor-template
   default-language:    Haskell2010
 
 test-suite paxos-server-test
